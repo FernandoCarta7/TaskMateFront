@@ -1,0 +1,23 @@
+.form-container {
+  background-color: #f8f9fa;
+  padding: 6rem;
+  border-radius: 1rem;
+  box-shadow: 1rem 4rem 8rem rgba(30, 62, 98, 0.2);
+  margin-top: 4rem;
+}
+.form-label {
+  font-weight: bold;
+  color: #495057;
+}
+.form-control,
+.form-select {
+  border-radius: 5px;
+}
+
+.margin1 {
+  margin: 0.5rem;
+}
+
+h2 {
+  color: #ff6500;
+}
