@@ -1,10 +1,6 @@
 <div class="container form-container bg-dark degradado">
   <br />
-  <form
-    class="form-floating p-3 mb-5 needs-validation"
-    (ngSubmit)="guardarUsuarioClick()"
-    novalidate
-  >
+  <form class="form-floating p-3 mb-5 needs-validation" (ngSubmit)="guardarUsuarioClick()" novalidate>
     <h2 style="display: flex; justify-content: center; align-items: center">
       Registrate, es totalmente gratis
     </h2>
@@ -16,83 +12,43 @@
     <div class="row g-4">
       <div class="col-md-6">
         <label for="nombre" class="form-label">Primer Nombre</label>
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Primer Nombre"
-          id="nombre"
-          name="nombre"
-          [(ngModel)]="this.nombre_primero"
-          required
-        />
+        <input type="text" class="form-control" placeholder="Primer Nombre" id="nombre" name="nombre"
+          [(ngModel)]="this.nombre_primero" required />
       </div>
 
       <div class="col-md-6">
         <label for="apellido_primero" class="form-label">Primer Apellido</label>
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Primer Apellido"
-          id="apellido_primero"
-          name="apellido_primero"
-          [(ngModel)]="this.apellido_primero"
-          required
-        />
+        <input type="text" class="form-control" placeholder="Primer Apellido" id="apellido_primero"
+          name="apellido_primero" [(ngModel)]="this.apellido_primero" required />
       </div>
     </div>
 
     <div class="row g-4 mt-3">
       <div class="col-md-6">
         <label for="nombre_segundo" class="form-label">Segundo Nombre</label>
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Segundo Nombre"
-          id="nombre_segundo"
-          name="nombre_segundo"
-          [(ngModel)]="this.nombre_segundo"
-        />
+        <input type="text" class="form-control" placeholder="Segundo Nombre" id="nombre_segundo" name="nombre_segundo"
+          [(ngModel)]="this.nombre_segundo" />
       </div>
       <div class="col-md-6">
-        <label for="apellido_segundo" class="form-label"
-          >Segundo Apellido</label
-        >
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Segundo Apellido"
-          id="apellido_segundo"
-          name="apellido_segundo"
-          [(ngModel)]="this.apellido_segundo"
-        />
+        <label for="apellido_segundo" class="form-label">Segundo Apellido</label>
+        <input type="text" class="form-control" placeholder="Segundo Apellido" id="apellido_segundo"
+          name="apellido_segundo" [(ngModel)]="this.apellido_segundo" />
       </div>
     </div>
 
     <div class="row g-4 mt-3">
       <div class="col-md-6">
-        <label for="genero" class="form-label">Genero</label>
-        <select
-          id="genero"
-          class="form-select"
-          name="genero"
-          [(ngModel)]="usuario.genero"
-          required
-        >
-          <option selected>Elegir genero</option>
+        <label for="genero" class="form-label">Género</label>
+        <select id="genero" class="form-select" name="genero" placeholder="Elegir género" [(ngModel)]="usuario.genero"
+          required>
           <option>FEMENINO</option>
           <option>MASCULINO</option>
         </select>
       </div>
       <div class="col-md-6">
         <label for="perfil" class="form-label">Perfil</label>
-        <select
-          id="perfil"
-          class="form-select"
-          name="perfil"
-          [(ngModel)]="usuario.perfil"
-          required
-        >
-          <option selected>Elegir perfil</option>
+        <select id="perfil" class="form-select" name="perfil" placeholder="Elegir perfil" [(ngModel)]="usuario.perfil"
+          required>
           <option>Estudiante</option>
           <option>Profesor</option>
         </select>
@@ -102,62 +58,28 @@
     <div class="row g-4 mt-3">
       <div class="col-md-6">
         <label for="email" class="form-label">Correo</label>
-        <input
-          type="email"
-          class="form-control"
-          placeholder="Correo"
-          id="email"
-          name="email"
-          [(ngModel)]="usuario.email"
-          required
-        />
+        <input type="email" class="form-control" placeholder="Correo" id="email" name="email"
+          [(ngModel)]="usuario.email" required />
       </div>
       <div class="col-md-6">
-        <label for="fecha_nacimiento" class="form-label"
-          >Fecha de nacimiento</label
-        >
-        <input
-          type="date"
-          class="form-control"
-          placeholder="Fecha de nacimiento"
-          id="fecha_nacimiento"
-          name="fecha_nacimiento"
-          [(ngModel)]="usuario.fecha_nacimiento"
-          required
-        />
+        <label for="fecha_nacimiento" class="form-label">Fecha de nacimiento</label>
+        <input type="date" class="form-control" placeholder="Fecha de nacimiento" id="fecha_nacimiento"
+          name="fecha_nacimiento" [(ngModel)]="usuario.fecha_nacimiento" required />
       </div>
     </div>
 
     <div class="row g-4 mt-3">
       <div class="col-md-6">
         <label for="password" class="form-label">Contraseña</label>
-        <input
-          type="password"
-          class="form-control"
-          placeholder="Contraseña"
-          id="password"
-          name="password"
-          [(ngModel)]="usuario.password"
-          required
-        />
+        <input type="password" class="form-control" placeholder="Contraseña" id="password" name="password"
+          [(ngModel)]="usuario.password" required />
       </div>
       <div class="col-md-6">
-        <label for="password_validacion" class="form-label"
-          >Repite la Contraseña</label
-        >
-        <input
-          type="password"
-          class="form-control"
-          placeholder="Repite la Contraseña"
-          id="password_validacion"
-          name="password_validacion"
-          [(ngModel)]="this.password_validacion"
-          required
-        />
+        <label for="password_validacion" class="form-label">Repite la Contraseña</label>
+        <input type="password" class="form-control" placeholder="Repite la Contraseña" id="password_validacion"
+          name="password_validacion" [(ngModel)]="this.password_validacion" required />
       </div>
-      <span *ngIf="this.password_validacion != this.usuario.password"
-        >Las Contraseñas no coinciden</span
-      >
+      <span *ngIf="this.password_validacion != this.usuario.password">Las Contraseñas no coinciden</span>
     </div>
 
     <div *ngIf="mensajeError" class="error-message">
@@ -172,9 +94,10 @@
         <i class="bi bi-person-plus-fill"></i> Registrarse
       </button>
       <!--<button class="btn btn-danger margin1" type="reset">Volver</button>-->
-      <button class="btn btn-success margin1" type="reset">
+      <button class="btn btn-success margin1" type="button" (onclick)="irInicioSesion()" disabled>
         <i class="bi bi-box-arrow-right"></i> Ya tengo cuenta
       </button>
     </div>
   </form>
 </div>
+<br>

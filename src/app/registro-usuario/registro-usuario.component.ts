@@ -109,4 +109,8 @@ export class RegistroUsuarioComponent {
     const nameRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s'-]+$/;
     return nameRegex.test(name.trim());
   }
+
+  irInicioSesion(){
+    this.enrutador.navigate(['/inicio-sesion']);
+  }
 }

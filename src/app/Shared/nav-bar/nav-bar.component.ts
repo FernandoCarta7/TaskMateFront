@@ -1,12 +1,25 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-nav-bar',
+  selector: 'nav-bar',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './nav-bar.component.html',
   styleUrl: './nav-bar.component.css'
 })
 export class NavBarComponent {
 
+  constructor( private router : Router ){}
+
+  navegarInicio(){
+    this.router.navigate(['/inicio'])
+  }
+  navegarSemestre(){
+    this.router.navigate(['/listar-semestres'])
+  }
+  navegarMaterias(){
+    this.router.navigate(['/listar-materias'])
+  }
 }
