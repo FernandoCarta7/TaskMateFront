@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-editar-semestres',
+  selector: 'editar-semestres',
   standalone: true,
   imports: [],
   templateUrl: './editar-semestres.component.html',

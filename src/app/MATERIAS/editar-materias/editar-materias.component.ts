@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-editar-materias',
+  selector: 'editar-materias',
   standalone: true,
   imports: [],
   templateUrl: './editar-materias.component.html',

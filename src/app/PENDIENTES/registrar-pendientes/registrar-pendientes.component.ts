@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-registrar-pendientes',
+  selector: 'registrar-pendientes',
   standalone: true,
   imports: [],
   templateUrl: './registrar-pendientes.component.html',

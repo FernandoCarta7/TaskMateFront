@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-listar-actividades',
+  selector: 'listar-actividades',
   standalone: true,
   imports: [],
   templateUrl: './listar-actividades.component.html',

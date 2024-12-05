@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-registrar-semestres',
+  selector: 'registrar-semestres',
   standalone: true,
   imports: [],
   templateUrl: './registrar-semestres.component.html',

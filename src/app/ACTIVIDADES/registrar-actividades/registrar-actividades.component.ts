@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-registrar-actividades',
+  selector: 'registrar-actividades',
   standalone: true,
   imports: [],
   templateUrl: './registrar-actividades.component.html',

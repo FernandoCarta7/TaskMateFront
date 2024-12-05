@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-registrar-materias',
+  selector: 'registrar-materias',
   standalone: true,
   imports: [],
   templateUrl: './registrar-materias.component.html',

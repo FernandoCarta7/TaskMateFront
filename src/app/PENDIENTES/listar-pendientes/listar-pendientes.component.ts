@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-listar-pendientes',
+  selector: 'listar-pendientes',
   standalone: true,
   imports: [],
   templateUrl: './listar-pendientes.component.html',
