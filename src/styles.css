@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+h2 {
+    color: #F29F58;
+    /*font-family: Consolas, "Courier New", monospace;*/
+    text-align: center;
+  }
+  p{
+    color: #AB4459;
+    /*font-family: Consolas, "Courier New", monospace;*/
+    text-align: center;
+  }
+  body{
+    font-family: Consolas, "Courier New", monospace;
+  }
+  span{
+    color: #FF204E;
+  }
