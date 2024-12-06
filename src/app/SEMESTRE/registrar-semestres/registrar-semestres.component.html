@@ -1,0 +1,47 @@
+<div class="container form-container bg-dark degradado">
+    <br />
+    <form class="form-floating p-3 mb-5 needs-validation" (ngSubmit)="guardarSemestreClick()" novalidate>
+        <h2 style="display: flex; justify-content: center; align-items: center">
+            ¡¡¡Creemos un nuevo semestre!!!
+        </h2>
+        <p>Completa todos los datos</p>
+        <br />
+
+        <div class="row g-4 mt-3">
+            <div class="col-md-6">
+                <label for="numeroSemestre" class="form-label">Nombre semestre</label>
+                <select id="numeroSemestre" class="form-select" name="numeroSemestre"
+                    placeholder="Elegir numero semestre" [(ngModel)]="this.numeroSemestre" required>
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+            <div class="col-md-6">
+                <label for="nombreSemestre" class="form-label">Año semestre</label>
+                <input type="text" class="form-control" placeholder="Año semestre" id="nombreSemestre"
+                    name="nombreSemestre" [(ngModel)]="nombreSemestre" required />
+            </div>
+        </div>
+
+        <div class="row g-4 mt-3">
+            <div class="col-md-6">
+                <label for="fecha_inicio" class="form-label">Fecha de inicio </label>
+                <input type="date" class="form-control" placeholder="Fecha de inicio" id="fecha_inicio"
+                    name="fecha_inicio" [(ngModel)]="semestre.fecha_inicio" required />
+            </div>
+
+            <div class="col-md-6">
+                <label for="fecha_fin" class="form-label">Fecha de finalización</label>
+                <input type="date" class="form-control" placeholder="Fecha de finalización" id="fecha_fin"
+                    name="fecha_fin" [(ngModel)]="semestre.fecha_fin" required />
+            </div>
+        </div>
+
+        <button class="btn btn-primary margin1" type="submit">
+            <i class="bi bi-award-fill"></i> Crear semestre
+        </button>
+        <!--<button class="btn btn-danger margin1" type="reset">Volver</button>-->
+    </form>
+</div>
+
+<br />

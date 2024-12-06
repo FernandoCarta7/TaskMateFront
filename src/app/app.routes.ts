@@ -2,18 +2,18 @@ import { Routes } from '@angular/router';
 import { FuncionalidadesComponent } from './funcionalidades/funcionalidades.component';
 import { RegistroUsuarioComponent } from './registro-usuario/registro-usuario.component';
 import { InicioComponent } from './inicio/inicio.component';
-import { ListarActividadesComponent } from './listar-actividades/listar-actividades.component';
-import { EditarActividadesComponent } from './editar-actividades/editar-actividades.component';
-import { RegistrarActividadesComponent } from './registrar-actividades/registrar-actividades.component';
+import { ListarActividadesComponent } from './ACTIVIDADES/listar-actividades/listar-actividades.component';
+import { EditarActividadesComponent } from './ACTIVIDADES/editar-actividades/editar-actividades.component';
+import { RegistrarActividadesComponent } from './ACTIVIDADES/registrar-actividades/registrar-actividades.component';
 import { EditarMateriasComponent } from './editar-materias/editar-materias.component';
 import { ListarMateriasComponent } from './listar-materias/listar-materias.component';
 import { RegistrarMateriasComponent } from './registrar-materias/registrar-materias.component';
 import { ListarPendientesComponent } from './listar-pendientes/listar-pendientes.component';
 import { EditarPendientesComponent } from './editar-pendientes/editar-pendientes.component';
 import { RegistrarPendientesComponent } from './registrar-pendientes/registrar-pendientes.component';
-import { ListarSemestresComponent } from './listar-semestres/listar-semestres.component';
-import { RegistrarSemestresComponent } from './registrar-semestres/registrar-semestres.component';
-import { EditarSemestresComponent } from './editar-semestres/editar-semestres.component';
+import { ListarSemestresComponent } from './SEMESTRE/listar-semestres/listar-semestres.component';
+import { RegistrarSemestresComponent } from './SEMESTRE/registrar-semestres/registrar-semestres.component';
+import { EditarSemestresComponent } from './SEMESTRE/editar-semestres/editar-semestres.component';
 import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 
 export const routes: Routes = [

@@ -22,4 +22,10 @@ export class NavBarComponent {
   navegarMaterias(){
     this.router.navigate(['/listar-materias'])
   }
+  navegarRegistroSemestre(){
+    this.router.navigate(['/registrar-semestre'])
+  }
+  navegarRegistroMateria(){
+    this.router.navigate(['/registrar-materias'])
+  }
 }

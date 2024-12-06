@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg degradado">
   <div class="container-fluid">
-    <a class="navbar-brand" (click)="navegarInicio()" >Inicio</a>
+    <a class="navbar-brand" (click)="navegarInicio()"><i class="bi bi-house"></i> Inicio</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -20,10 +20,16 @@
           </li>
         -->
         <li class="nav-item">
-          <button class="nav-link" (click)="navegarSemestre()">Semestres</button>
+          <button class="nav-link" (click)="navegarSemestre()"><i class="bi bi-book-half"></i> Semestres</button>
         </li>
         <li class="nav-item">
-          <button class="nav-link" (click)="navegarMaterias()">Materias</button>
+          <button class="nav-link" (click)="navegarRegistroSemestre()"><i class="bi bi-award-fill"></i> Registrar semestre</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" (click)="navegarMaterias()"><i class="bi bi-calculator"></i> Materias</button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" (click)="navegarMaterias()"><i class="bi bi-plus-lg"></i> Registrar materias</button>
         </li>
       </ul>
       <!--
