@@ -1,0 +1,10 @@
+.margin5{
+    margin: 0.5rem;
+}
+.contenedor {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;    /* Centra verticalmente */
+    height: 100vh;          /* Altura de toda la pantalla */
+}
+

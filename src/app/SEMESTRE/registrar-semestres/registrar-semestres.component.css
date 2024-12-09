@@ -1,4 +1,16 @@
 .margin1 {
-    margin: 1rem;
-  }
-  
+  margin: 1rem;
+}
+
+.degradado {
+  /*background: linear-gradient(#000000, #1B1833);*/
+  background: radial-gradient( #1B1833,#000000);
+  background: gradient;
+}
+
+.blanco{
+  color:#DBD3D3;
+}
+.naranja{
+  color: #EC8305;
+}

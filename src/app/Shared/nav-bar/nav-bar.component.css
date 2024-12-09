@@ -1,6 +1,11 @@
 
 button, a{
-    color: #008170;
+    color: white;
+    
+}
+button:hover,a:hover{
+    color:#ff7700;
+    
 }
 .degradado{
     /*background: linear-gradient(#173B45,#000);*/

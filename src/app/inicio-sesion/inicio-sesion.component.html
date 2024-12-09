@@ -1,1 +1,45 @@
-<p>inicio-sesion works!</p>
+<form (ngSubmit)="login()">
+  <div class="container">
+    <div class="input-group mb-3">
+      <span class="input-group-text" id="basic-addon1"
+        ><i class="bi bi-envelope-at-fill"></i
+      ></span>
+      <input
+        type="email"
+        class="form-control"
+        placeholder="Correo electrónico"
+        aria-label="Correo electrónico"
+        name="email"
+        id="email"
+        aria-describedby="basic-addon1"
+        [(ngModel)]="correo"
+      />
+    </div>
+
+    <div class="input-group mb-3">
+      <input
+        type="password"
+        class="form-control"
+        placeholder="Contraseña"
+        aria-label="Contraseña"
+        name="password"
+        id="password"
+        aria-describedby="basic-addon2"
+        [(ngModel)]="password"
+      />
+      <span class="input-group-text" id="basic-addon2"
+        ><i class="bi bi-incognito"></i
+      ></span>
+    </div>
+    <button class="btn btn-primary margin5">Iniciar sesión</button>
+  </div>
+</form>
+<div class="container">
+  <button
+    class="btn btn-light margin5"
+    type="button"
+    (click)="irRegistroUsuario()"
+  >
+    Crear cuenta
+  </button>
+</div>
